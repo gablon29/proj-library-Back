@@ -10,8 +10,8 @@ import lombok.*;
 
 public class Alumno {
     @Id
-    @SequenceGenerator(name = "sec_alumno", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sec_alumno")
+    // @SequenceGenerator(name = "sec_alumno", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;
