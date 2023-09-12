@@ -11,8 +11,8 @@ import lombok.*;
 
 public class Curso {
     @Id
-    @SequenceGenerator(name = "sec_curso", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sec_curso")
+    // @SequenceGenerator(name = "sec_curso", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;

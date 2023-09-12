@@ -10,8 +10,8 @@ import lombok.*;
 
 public class Area {
     @Id
-    @SequenceGenerator(name = "sec_area", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sec_area")
+    // @SequenceGenerator(name = "sec_area", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;
